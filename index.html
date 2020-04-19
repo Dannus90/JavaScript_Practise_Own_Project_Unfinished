@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Storing Ordvitsar</title>
+  </head>
+  <body>
+    <!-- WRAPPER -->
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header-container">
+        <h1>Store Your Jokes Here!</h1>
+        <p>
+          Please enter your Joke in the field below and also your age and name
+        </p>
+        <div class="underline"></div>
+      </header>
+
+      <!-- Output -->
+
+      <div class="container">
+        <table class="output-container">
+          <tr>
+            <th>Joke</th>
+            <th>Contributor</th>
+            <th>Age</th>
+            <th>Remove</th>
+          </tr>
+        </table>
+
+        <!-- Enter Output -->
+
+        <h3>Please Contribute With Your Amazing Ordvits</h3>
+        <form action="form">
+          <div class="form-part">
+            <label for="textarea">Please Enter Your Joke 🤡</label>
+            <input
+              type="textarea"
+              id="text-1"
+              placeholder="Enter your Joke..."
+            />
+          </div>
+          <small class="small-1">Error</small>
+          <div class="form-part">
+            <label for="text">Please Enter Your Name ✍</label>
+            <input type="text" id="text-2" placeholder="Enter your name..." />
+          </div>
+          <small class="small-2">Error</small>
+          <div class="form-part">
+            <label for="age">Please Enter Your Age ✍</label>
+            <input type="number" id="number" placeholder="Enter your age..." />
+          </div>
+          <small class="small-3">Error</small>
+          <button class="btn">Add Your Joke</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0bd4c78694.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

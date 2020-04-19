@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(137, 150, 184, 1) 36%,
+    rgba(46, 126, 143, 1) 100%
+  );
+}
+
+/* Wrapper */
+.wrapper {
+  background-color: antiquewhite;
+  margin: auto;
+  width: 50%;
+  box-shadow: 5px 5px 40px 0px rgba(217, 217, 217, 1);
+  border-radius: 5px;
+  height: 100%;
+  margin-top: 10vh;
+}
+/* Header */
+.header-container {
+  text-align: center;
+  color: #000;
+}
+
+.header-container h1 {
+  font-size: 2rem;
+  padding: 20px 10px 0 10px;
+  margin: 10px;
+}
+
+.header-container p {
+  font-size: 1.2rem;
+  padding: 10px 10px 20px 10px;
+}
+
+.underline {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: brown;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+/* Container */
+
+.container {
+  text-align: center;
+}
+
+.output-container {
+  border-bottom: 2px solid brown;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+th {
+  font-size: 1.4rem;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+td {
+  display: flex;
+  flex-direction: rows;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Enter Output */
+
+h3 {
+  margin: 20px 10px 20px 10px;
+  font-size: 1.4rem;
+}
+
+.form-part {
+  margin: 10px;
+}
+
+.form-part label {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form-part label[for="text"],
+label[for="age"] {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="textarea"],
+input[type="number"] {
+  border: 3px solid transparent;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0;
+  margin: auto;
+  transition: border 0.2s;
+}
+
+#text-1 {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+}
+
+/* Submit Btn */
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: brown;
+  color: #fff;
+  box-shadow: 5px 5px 40px 0px rgba(217, 217, 217, 1);
+  transition: all 1s;
+  margin: 20px;
+}
+
+.btn:hover {
+  color: orange;
+  transform: scale(1.1);
+}
+
+/* JavaScript added Styles */
+.small-1,
+.small-2,
+.small-3 {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  background: #fff;
+  width: 20%;
+  display: none;
+  visibility: hidden;
+}
+
+.error {
+  color: red;
+  display: block;
+  visibility: visible;
+}
+
+.success {
+  color: green;
+  display: block;
+  visibility: visible;
+}
+
+/* Font awesome */
+.fas {
+  color: red;
+  font-size: 1.2rem;
+  animation: delete 1.5s 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes delete {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-10px);
+  }
+
+  40% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+
+  80% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
